@@ -1,0 +1,73 @@
+platforms:
+  taobao:
+    name: "淘宝"
+    style: "简洁专业，突出商品卖点和优惠信息"
+    max_length: 500
+    features:
+      - "支持商品关键词"
+      - "支持优惠信息"
+      - "支持详细参数"
+
+  xiaohongshu:
+    name: "小红书"
+    style: "轻松活泼，个人化体验分享风格"
+    max_length: 1000
+    features:
+      - "支持话题标签"
+      - "支持个人体验"
+      - "支持场景描述"
+
+  douyin:
+    name: "抖音"
+    style: "简短有力，突出爆点，带感情色彩"
+    max_length: 300
+    features:
+      - "支持话题标签"
+      - "支持短视频文案"
+      - "支持快节奏表达"
+
+  weibo:
+    name: "微博"
+    style: "社交化表达，注重互动和话题性"
+    max_length: 800
+    features:
+      - "支持话题标签"
+      - "支持转发互动"
+      - "支持图文结合"
+
+templates:
+  problem_solution:
+    name: "问题解决型"
+    structure: "痛点-解决方案-产品优势-行动召唤"
+    example: "天气转凉穿什么？[产品]让你时尚保暖两不误..."
+    suitable_platforms: ["taobao", "xiaohongshu"]
+
+  lifestyle:
+    name: "生活方式型"
+    structure: "场景-情感共鸣-产品介绍-使用体验"
+    example: "周末约会穿搭分享！[产品]让你轻松穿出女神范..."
+    suitable_platforms: ["xiaohongshu", "weibo"]
+
+  discount_driven:
+    name: "优惠促销型"
+    structure: "优惠力度-产品亮点-稀缺性-行动召唤"
+    example: "限时特惠！[产品]新品上市钜惠..."
+    suitable_platforms: ["taobao", "douyin"]
+
+  trending_topic:
+    name: "热点话题型"
+    structure: "热点引入-产品关联-情感共鸣-产品优势"
+    example: "今年最火的穿搭风格，[产品]让你轻松驾驭..."
+    suitable_platforms: ["douyin", "weibo", "xiaohongshu"]
+
+  celebrity_style:
+    name: "明星同款型"
+    structure: "明星引入-产品展示-对比优势-购买引导"
+    example: "明星同款平价替代！[产品]让你轻松拥有明星范..."
+    suitable_platforms: ["xiaohongshu", "douyin", "weibo"]
+
+  seasonal:
+    name: "季节主题型"
+    structure: "季节特点-应景需求-产品方案-购买理由"
+    example: "入秋必备！[产品]让你的衣橱焕然一新..."
+    suitable_platforms: ["taobao", "xiaohongshu", "weibo"] 
